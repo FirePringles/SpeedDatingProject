@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ProfilePage</title>
+    <link rel="stylesheet" href="/css/ContactsStyle.css">
+    <link rel="stylesheet" href="/css/globalstyle.css">
+    <script src="https://vuejs.org/js/vue.js" defer></script>
+    <script src="/js/contactsRecive.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="topbar">
+            <img src="/img/aubergine_logo.png" width="260">
+        </div>
+    </header>
+    <main id="contacts">
+        <div id="info">
+        </div>
+        <footer>
+            <input type="button" v-on:click="done()" id="infoButton" value="Klar">
+        </footer>
+    </main>
+</body>
+
+</html>

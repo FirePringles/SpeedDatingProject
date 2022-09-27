@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <title>ProfilePage</title>
+    <link rel="stylesheet" href="/css/contacts.css">
+    <link rel="stylesheet" href="/css/globalstyle.css">
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="https://vuejs.org/js/vue.js" defer></script>
+    <script src="/js/contacts.js" defer></script>
+  </head>
+  
+  <body onload="onLoad()">
+    <header>
+      <div class="topbar">
+	<img src="/img/aubergine_logo.png" width="260">
+      </div>
+    </header>
+    <main>
+      <div id="contacts">
+
+	<div class="labelContainer">
+          <label class="label" for="contact1">Vill du dela din kontaktinformation med date nummer 1</label><br>
+          <select name="contacts1" class="dropdown">
+            <option class="dropdownChoice" value="Ja">Ja</option>
+            <option class="dropdownChoice" value="Nej" selected="selected">Nej</option>
+          </select>
+	</div>
+	
+	<div class="labelContainer">
+          <label class="label" for="contacs2">Vill du dela din kontaktinformation med date nummer 2</label><br>
+          <select name="contacts2" class="dropdown">
+            <option class="dropdownChoice" value="Ja">Ja</option>
+            <option class="dropdownChoice" value="Nej" selected="selected">Nej</option>
+          </select>
+	</div>
+
+	<div class="labelContainer">
+          <label class="label" for="contacs3">Vill du dela din kontaktinformation med date nummer 3</label><br>
+          <select name="contacts3" class="dropdown">
+            <option class="dropdownChoice" value="Ja">Ja</option>
+            <option class="dropdownChoice" value="Nej" selected="selected">Nej</option>
+          </select>
+	</div>
+      </div>
+      <footer>
+	<input id="shareButton" type="button" value="Dela" onclick="done()">
+      </footer>
+    </main>
+  </body>
+
+</html>
